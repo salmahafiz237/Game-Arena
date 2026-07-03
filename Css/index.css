@@ -1,0 +1,236 @@
+/* //////////////////general////////// */
+@font-face {
+    font-family: DaysOne;
+    src: url(../fonts/DaysOne-Regular.ttf);
+}
+@font-face {
+    font-family: ChakraPetch;
+    src: url(../fonts/ChakraPetch-Regular.ttf);
+}
+.yellow-color{
+    color: #C1F21C;
+}
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+* {
+    margin: 0;
+    scroll-behavior: smooth;
+}
+::selection {
+    color: #0b0e13;
+    background-color:#cbfe1c; 
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+li {
+    list-style: none;
+}
+/* //////////////////general////////// */
+
+/* //////////////////Navbar////////// */
+.navbar-custom {
+    font-family: ChakraPetch, sans-serif;
+    background-color: #0B0E13;
+}
+.navbar-custom .navbar-brand {
+    color: #C1F21C;
+}
+.navbar-custom .nav-link {
+    color: white;
+    transition: color 0.3s;
+}
+.navbar-custom .nav-link:hover,
+.navbar-custom .nav-link.active {
+    color: #C1F21C;
+}
+.icon-btn {
+    background: transparent;
+    border: none;
+    color: white;
+    font-size: 1.1rem;
+    transition: color 0.3s;
+    cursor: pointer;
+}
+.icon-btn:hover {
+    color: #A4CE1A;
+}
+.btn-signin {
+    background-color: #C1F21C;
+    color: #0B0E13;
+    border: none;
+    padding: 0.7rem 1.6rem;
+    border-radius: 0.5rem;
+    transition: background-color 0.3s;
+}
+.btn-signin:hover {
+    background-color: #A4CE1A;
+    color: #0B0E13;
+}
+/* //////////////////Navbar////////// */
+
+/* //////////////////hero section////////// */
+.hero-section {
+    min-height: 100vh;
+    padding-top: 110px;
+    padding-bottom: 60px;
+    font-family: ChakraPetch, sans-serif;
+}
+#hero h1{
+    font-family:DaysOne, sans-serif ;
+}
+.bg-img{
+    background-image:linear-gradient(rgba(0, 0, 0,0.9),rgba(0, 0, 0,0.9)),url(../images/hero-bg-H6PoyNYD.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.yellow-border{
+    /* color: #C1F21C; */
+    border-radius: 0.5rem;
+    transition: background-color 0.3s;
+    border: 2px solid #C1F21C; 
+}
+.yellow-border:hover {
+    background-color: #A4CE1A;
+    color: #0B0E13;
+}
+.hero-img-wrapper {
+    background: linear-gradient(to right, #C1F21C, #4ade80);
+}
+.hero-img {
+    width: 100%;
+    height: 380px;
+    object-fit: cover;
+    border-radius: 0.8rem;
+}
+.players-card {
+    bottom: -20px;
+    left: -20px;
+    background-color: #0B0E13;
+    z-index: 5;
+    border: 1px solid #364153;
+}
+/* //////////////////hero section////////// */
+
+/* //////////////////latest-games section////////// */
+.latest-section {
+    min-height: 100vh;
+    padding-top: 110px;
+    padding-bottom: 60px;
+    font-family: ChakraPetch, sans-serif;
+}
+#latest-games{
+    font-family: DaysOne, sans-serif;
+}
+.line {
+    width: 90px;
+    height: 2px;
+    display: inline-block;
+}
+.game-img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 20px;
+}
+.slider-btn {
+    width: 60px;
+    height: 60px;
+    border: 2px solid #2a3243;
+    background: transparent;
+    color: white;
+    border-radius: 50%;
+    transition: 0.3s;
+}
+.slider-btn:hover{
+    border-color: #d7ff00;
+    color: #d7ff00;
+}
+.yellowish-border {
+    border: 2px solid #d7ff00;
+    background: transparent;
+    border-radius: 10px;
+}
+.yellowish-border:hover {
+    background: #d7ff00;
+    color: black;
+}.game-card {
+    position: relative;
+    overflow: hidden;
+    border-radius: 20px;
+    transition: 0.4s ease;
+}
+.game-card::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(203, 254, 28, 0.35);
+    opacity: 0;
+    transition: 0.4s ease;
+    z-index: 1;
+    pointer-events: none;
+}
+.game-card:hover {
+    border: 2px solid #CBFE1C;
+}
+.game-card:hover::after {
+    opacity: 1;
+}
+/* Genre badges - top left, slide down on hover */
+.card-badges {
+    position: absolute;
+    top: -40px;
+    left: 16px;
+    display: flex;
+    gap: 8px;
+    z-index: 2;
+    transition: top 0.3s ease;
+}
+.game-card:hover .card-badges {
+    top: 16px;
+}
+.badge-pill {
+    background: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 6px 12px;
+    border-radius: 999px;
+    backdrop-filter: blur(4px);
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    white-space: nowrap;
+}
+.badge-pill i {
+    color: #CBFE1C;
+    font-size: 11px;
+}
+/* Game title - bottom, slide up on hover */
+.card-title {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 20px;
+    z-index: 2;
+    transform: translateY(100%);
+    transition: transform 0.3s ease;
+}
+.game-card:hover .card-title {
+    transform: translateY(0);
+}
+.card-title h3 {
+    color: #0B0E13;
+    /* font-weight: bold; */
+    font-size: 17px;
+    margin: 0;
+    font-family: DaysOne, sans-serif;
+}
