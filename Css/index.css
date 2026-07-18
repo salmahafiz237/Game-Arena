@@ -7,6 +7,9 @@
     font-family: ChakraPetch;
     src: url(../fonts/ChakraPetch-Regular.ttf);
 }
+/* body {
+    background-color: #0f172a;
+} */
 .yellow-color{
     color: #C1F21C;
 }
@@ -125,6 +128,9 @@ li {
     padding-top: 110px;
     padding-bottom: 60px;
 }
+#latest-games h2 {
+    font-family: DaysOne, sans-serif;
+}
 .line {
     width: 90px;
     height: 2px;
@@ -235,6 +241,8 @@ li {
 /* //////////////////what we do section////////// */
 #what-we-do{
     font-family: DaysOne, sans-serif;
+    position: relative;
+    padding-bottom: 50px;
 }
 .service-card {
     background: #1A1A1A;
@@ -315,4 +323,189 @@ li {
     height: 100%;
     object-fit: cover;
 }
+#what-we-do::after{
+    content: "";
+    background: linear-gradient(90deg, transparent, #cbfe1c 20%, #cbfe1c 80%, transparent);
+    width: 80%;
+    max-width: 600px;
+    height: 2px;
+    box-shadow: 0 0 10px #cbfe1c, 0 0 20px #cbfe1c4d;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%);
+    /* margin-bottom:10px ; */
+}
+
 /* //////////////////what we do section////////// */
+
+/* //////////////////// sponsers section /////////////// */
+.sponsor-card {
+    height: 6rem;
+    width: 6rem;
+    flex: 0 0 auto;
+    transition: background-color 0.2s ease-in-out;
+}
+.sponsor-card.space-r {
+    margin-right: 16px;
+}
+.sponsor-card:hover {
+    background-color: #0B0E13;
+}
+.sponsor-card img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+}
+/* Marquee wrapper */
+.marquee-wrapper {
+    isolation: isolate;
+}
+/* Marquee mechanics */
+.marquee-track {
+    display: flex;
+    width: max-content;
+}
+.track-left {
+    animation: scroll-left 30s linear infinite;
+}
+.track-right {
+    animation: scroll-right 30s linear infinite;
+}
+@keyframes scroll-left {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-50%);
+    }
+}
+@keyframes scroll-right {
+    from {
+        transform: translateX(-50%);
+    }
+
+    to {
+        transform: translateX(0);
+    }
+}
+/* Edge fade gradients */
+.fade-overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 8rem;
+    pointer-events: none;
+    z-index: 2;
+}
+.fade-overlay.start-0 {
+    background: linear-gradient(to right, #0B0E13, transparent);
+}
+.fade-overlay.end-0 {
+    background: linear-gradient(to left, #0B0E13, transparent);
+}
+/* Deep background ambient glow */
+.radial-glow-background {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+    width: 990px;
+    height: 280px;
+    border-radius: 50%;
+    background: radial-gradient(ellipse at center,
+            rgba(170, 212, 27, 0.88) 0%,
+            rgba(203, 254, 28, 0.5) 35%,
+            rgba(203, 254, 28, 0.06) 60%,
+            transparent 95%);
+    filter: blur(60px);
+}
+/* //////////////////// sponsers section /////////////// */
+
+/* //////////////////// our team section /////////////// */
+#our-taem {
+    font-family: DaysOne, sans-serif;
+}
+.team-card{
+    position: relative;
+    overflow: hidden;
+    border-radius: 20px;
+    cursor: pointer;
+}
+.team-card img{
+    width: 100%;
+    height: 320px;
+    object-fit: cover;
+    transition: transform .5s ease;
+}
+/* Grey Layer */
+.overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.45);
+    backdrop-filter: grayscale(100%);
+    -webkit-backdrop-filter: grayscale(100%);
+    z-index: 1;
+    transition: transform 0.5s ease;
+    
+}
+/* Hover Effect */
+.team-card:hover .overlay {
+    transform: translateY(-100%);
+}
+
+.team-content {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    z-index: 2;
+    transition: all .4s ease;
+}
+.team-content h5 {
+    color: #fff;
+    transition: .4s;
+    font-size: 19px;
+    font-weight: 500;
+}
+.team-content .role {
+    color: #99A1AF;
+    transition: .4s;
+    font-family: 300;
+    font-size: 13px;
+    font-family: Chakra Petch, sans-serif;
+}
+.team-content span {
+    color: #99A1AF;
+    transition: .4s;
+    font-family: 300;
+    font-size: 11px;
+    font-family: Chakra Petch, sans-serif;
+}
+.vertical-name {
+    padding-bottom: 45px;
+    padding-right: 20px;
+    transform: rotate(90deg);
+    color: #fff;
+    transition: 0.4s;
+    font-weight: 600;
+    font-family: Chakra Petch, sans-serif;
+}
+.team-card:hover .role {
+    color: #CBFE1C;
+}
+.team-card:hover .vertical-name {
+    color: #CBFE1C;
+}
+.team-content h5,
+.team-content p,
+.team-content span {
+    margin: 0;
+    padding: 0;
+}
