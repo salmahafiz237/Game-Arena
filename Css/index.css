@@ -668,7 +668,7 @@ textarea {
 }
 
 /* ===========================
-   Bottom Stats
+    Bottom Stats
 =========================== */
 .form-box hr {
     border-color: #3A465A;
@@ -683,3 +683,68 @@ textarea {
     font-size: 14px;
 }
 /* //////////////////// contact us section /////////////// */
+
+/* //////////////////// footer /////////////// */
+#footer {
+    background: #000;
+}
+.footer-logo {
+    font-family: ChakraPetch, sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    /* color: #fff; */
+}
+.footer-text {
+    color: #9CA3AF;
+    line-height: 1.8;
+    max-width: 71%;
+    font-family: ChakraPetch, sans-serif;
+}
+.footer-title {
+    color: #fff;
+    font-size: 22px;
+    margin-bottom: 25px;
+    font-family: DaysOne, sans-serif;
+}
+.footer-links li {
+    margin-bottom: 15px;
+}
+.footer-links a {
+    text-decoration: none;
+    color: #9CA3AF;
+    transition: .3s;
+    font-family: ChakraPetch, sans-serif;
+}
+.footer-links a:hover {
+    color: #CBFE1C;
+}
+.social-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: #9CA3AF;
+    transition: 0.35s;
+    font-size: 20px;
+}
+.social-link:hover {
+    color: #CBFE1C;
+}
+.footer-line {
+    border-color: #272727;
+    opacity: 1;
+}
+.footer-copy {
+    color: #9CA3AF;
+    font-family: ChakraPetch, sans-serif;
+}
+.footer-bottom-link {
+    color: #9CA3AF;
+    text-decoration: none;
+    transition: .3s;
+    font-family: ChakraPetch, sans-serif;
+}
+.footer-bottom-link:hover {
+    color: #CBFE1C;
+}
+/* //////////////////// footer /////////////// */
