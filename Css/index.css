@@ -425,6 +425,11 @@ li {
 /* //////////////////// sponsers section /////////////// */
 
 /* //////////////////// our team section /////////////// */
+#our-taem.latest-section {
+    min-height: 100vh;
+    padding-top: 110px;
+    padding-bottom: 90px;
+}
 #our-taem {
     font-family: DaysOne, sans-serif;
 }
@@ -509,3 +514,172 @@ li {
     margin: 0;
     padding: 0;
 }
+/* //////////////////// our team section /////////////// */
+
+/* //////////////////// contact us section /////////////// */
+#contact-us h2 {
+    font-family: DaysOne, sans-serif;
+}
+
+/* ===========================
+   Contact Cards
+=========================== */
+
+.contact-card {
+    background: #1A2332;
+    border-radius: 20px;
+    padding: 35px;
+    transition: .35s;
+}
+.contact-card h4 {
+    color: #fff;
+    font-size: 22px;
+    margin-bottom: 8px;
+    font-family: DaysOne, sans-serif;
+}
+.contact-card p {
+    color: #99A1AF;
+    margin: 0;
+    font-family: ChakraPetch, sans-serif;
+}
+.contact-icon {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background: #CBFE1C;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #111827;
+    font-size: 28px;
+    flex-shrink: 0;
+}
+
+/* ===========================
+   Community Box
+=========================== */
+.community-box {
+    background: linear-gradient(90deg, #CBFE1C, #21E070);
+    border-radius: 20px;
+    padding: 35px;
+    color: #111827;
+}
+.community-box h3 {
+    font-family: DaysOne, sans-serif;
+    margin-bottom: 18px;
+}
+.community-box p {
+    margin: 0;
+    font-family: ChakraPetch, sans-serif;
+}
+.social-icon {
+
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: #0F1625;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #CBFE1C;
+    cursor: pointer;
+    transition: .35s;
+}
+.social-icon:hover {
+    background: #263B20;
+    color: #CBFE1C;
+}
+
+/* ===========================
+   Form Box
+=========================== */
+
+.form-box {
+
+    background: #1A2332;
+    border-radius: 20px;
+    padding: 40px;
+}
+.form-box h3 {
+    color: #fff;
+    font-family: DaysOne, sans-serif;
+}
+.form-box label {
+    color: #D1D5DB;
+    font-family: ChakraPetch, sans-serif;
+    font-weight: 600;
+    font-size: 14.5px;
+    margin-bottom: 10px;
+    display: block;
+}
+
+.form-control,
+.form-select {
+    background: #2A3446;
+    border: 2px solid #3A465A;
+    color: #fff;
+    padding: 14px 18px;
+    border-radius: 10px;
+}
+.form-control::placeholder {
+    color: #8D96A8;
+}
+.form-control:focus,
+.form-select:focus {
+    background: #2A3446;
+    border-color: #CBFE1C;
+    color: #fff;
+    box-shadow: none;
+}
+textarea {
+    resize: none;
+}
+
+/* ===========================
+   Checkbox
+=========================== */
+.form-check-input {
+    background: #2A3446;
+    border-color: #555;
+}
+.form-check-input:checked {
+    /* background: #CBFE1C; */
+    border-color: #CBFE1C;
+}
+.form-check-label {
+    color: #99A1AF;
+}
+
+/* ===========================
+   Button
+=========================== */
+.contact-btn {
+    background: #CBFE1C;
+    color: #111827;
+    font-weight: 700;
+    padding: 15px;
+    border: none;
+    border-radius: 10px;
+    transition: .35s;
+}
+.contact-btn:hover {
+    background: #d9ff4a;
+    /* transform: translateY(-3px); */
+}
+
+/* ===========================
+   Bottom Stats
+=========================== */
+.form-box hr {
+    border-color: #3A465A;
+}
+.form-box h2.yellow-color {
+    font-size: 25px;
+    font-weight: 700;
+}
+.form-box p {
+    color: #99A1AF;
+    margin: 0;
+    font-size: 14px;
+}
+/* //////////////////// contact us section /////////////// */
